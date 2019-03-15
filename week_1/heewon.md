@@ -31,7 +31,12 @@ sudo apt install docker-ce
 
 ## Dockerfile로 도커 관리하기
 
-* FROM ubuntu:18.04 ( 우분투 이미지를 받아옴 )
-* RUN apt-get update ( RUN으로 커맨드 실행이 가능합니다! )
-* RUN apt-get upgrade -y
-* RUN apt-get install -y git
+- FROM ubuntu:18.04 ( 우분투 이미지를 받아옴 )
+- RUN apt-get update ( RUN으로 커맨드 실행이 가능합니다! )
+- RUN apt-get upgrade -y
+- RUN apt-get install -y git
+- RUN apt-get install -y nodejs
+- ADD ./ /var/www ( 로컬 파일을 도커로 이동 )
+- WORKDIR /var/www ( 작업 디렉토리를 결정 )
+- RUN npm install
+- CMD node index.js
