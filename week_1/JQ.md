@@ -82,7 +82,7 @@ sudo docker run hello-world // docker 실행되는지 테스트
 
   - 80번포트를 8000번과연결
 
-![image-20190305225231670](./img/image-20190305225231670.png)
+![image-20190305225231670](./images/image-20190305225231670.png)
 
 docker run --rm -it python:3.7-stretch
 
